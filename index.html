@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Digibook</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Chakra Petch", sans-serif;
+        }
+
+        header{
+            grid-area: cabecalho;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 80px;
+            padding: 20px 0;
+            border: solid 1px red;
+        }
+
+        nav {
+            grid-area: navegacao;
+        }
+
+        main {
+            grid-area: conteudo;
+        }
+
+        footer {
+            grid-area: rodape;
+        }
+
+        body {
+            
+            display: grid;
+            min-height: 100vh;
+            grid-template-columns: 300px 1fr ;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas: 
+            'cabecalho cabecalho'
+            'navegacao conteudo'
+            'navegacao rodape';
+            background-color: #01080E;
+            /*Backgroud card #021017
+           Cards font color: #2BDEFD #f16165 #dc6ebe #9cd33b #7b71ff;
+            Backgroud buttons #2BFDBE
+            Border e font barra busca #0D6271
+            color link menu #D7F9FF
+            */
+            
+        }
+
+        .logo img {
+            width: 80%;
+            border: solid 1px red;
+        }
+
+        .barraBusca {
+            
+            border: solid 1px #0f7183;
+            background-color:#01080E;
+            padding: 10px;
+        }
+
+        .barraBusca input {
+            color: white;
+            border: none;
+            background-color:#01080E;
+            outline: none;
+            width: 300px;
+        }
+        .barraBusca input::placeholder {
+            color: #0f7183;
+  
+        }
+      
+
+        i {
+            color: #D7F9FF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.jpg" alt=""></div>
+        <div class="barraBusca">
+            <input type="search"  name="" placeholder="O que você quer aprender?">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Como funciona</li>
+                <li>Para empresas</li>
+                <li>Entrar</li>
+            </ul>
+        </div>
+        <div class="botaoPlanos">
+            <input type="button" value="Ver Planos">
+        </div>
+    </header>
+
+    <main></main>
+    <nav></nav>
+    <footer></footer>
+    
+</body>
+</html>
