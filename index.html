@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Digibook</title>
 
@@ -21,9 +23,8 @@
             justify-content:flex-start;
             flex-wrap: wrap;
             align-items: center;
-            margin: 0 80px;
-            padding: 20px 0;
-            border: solid 1px red;
+            margin: 0 60px;
+            padding: 40px 0;
         }
 
         nav {
@@ -32,6 +33,7 @@
 
         main {
             grid-area: conteudo;
+            margin: 0 60px;
         }
 
         footer {
@@ -46,46 +48,180 @@
             grid-template-rows: auto 1fr auto;
             grid-template-areas: 
             'cabecalho cabecalho'
-            'navegacao conteudo'
-            'navegacao rodape';
+            'conteudo conteudo'
+            'rodape rodape';
             background-color: #01080E;
             /*Backgroud card #021017
            Cards font color: #2BDEFD #f16165 #dc6ebe #9cd33b #7b71ff;
             Backgroud buttons #2BFDBE
-            Border e font barra busca #0D6271
-            color link menu #D7F9FF
             */
             
         }
 
+        /*HEADER*/
+
+        .logo {
+            display: inline-block;
+            width: auto;
+            margin-right: 20px;
+        }
+
         .logo img {
-            width: 80%;
-            border: solid 1px red;
+            display: block;
+            width: 100%;
         }
 
         .barraBusca {
-            
-            border: solid 1px #0f7183;
+            border: solid 1px #7be382;
             background-color:#01080E;
             padding: 10px;
         }
 
         .barraBusca input {
             color: white;
+            font-weight: bold;
             border: none;
             background-color:#01080E;
             outline: none;
-            width: 300px;
+            width: 250px;
         }
         .barraBusca input::placeholder {
-            color: #0f7183;
+            color: #7be382;
   
+        }
+
+        .menu {
+            flex-grow: 2;
+            
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: right;
         }
       
 
         i {
-            color: #D7F9FF;
+            color: #d2f2d4;
+            padding: 0 20px;
         }
+
+        li {
+            list-style-type: none;
+            flex-direction: row;           
+        }
+
+        .menu a {
+            color: #d2f2d4;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bolder;
+            font-size: 0.8em;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px; /* Espessura da borda */
+            background-color: #22b600; /* Cor da borda */
+            transition: width 0.5s ease, left 0.5s ease;
+        }
+
+        .menu a:hover::after {
+            width: 50%;
+            left: 25%;
+        }
+
+        .menu a:hover {
+            color: #22b600
+        }
+
+
+
+        .botaoPlanos input {
+            background-color: #22b600;
+            color: white;
+            font-weight: bolder;
+            padding: 15px 50px;
+            border: solid 1px #22b600;
+            clip-path: polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%);
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .botaoPlanos input:hover {
+            background-color: #d2f2d4;
+            color: black;
+        }
+
+        /*HEADER*/
+
+        /*MAIN*/
+
+        .main{
+            display: flex;
+            flex-direction: column;
+            background-image: url(robot.png);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #d2f2d4;
+            font-size: 4em;
+        }
+
+        .titulo1 {
+            color: #d2f2d4;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .botaoPlanos2 input {
+            background-color: #22b600;
+            color: white;
+            font-weight: bolder;
+            padding: 15px 50px;
+            border: solid 1px #22b600;
+            clip-path: polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%);
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .botaoPlanos2 input:hover {
+            background-color: #d2f2d4;
+            color: black;
+        }
+
+        .cursos {
+            margin-top: 60px;
+            
+        }
+
+        .cursosCards {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 50% 50%;
+            width: 70%;
+        }
+
+        /*MAIN*/
+
     </style>
 </head>
 <body>
@@ -93,22 +229,50 @@
         <div class="logo"><img src="logo.jpg" alt=""></div>
         <div class="barraBusca">
             <input type="search"  name="" placeholder="O que você quer aprender?">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="index.html"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
         <div class="menu">
             <ul>
-                <li>Como funciona</li>
-                <li>Para empresas</li>
-                <li>Entrar</li>
+                <li><a href="">COMO FUNCIONA</a></li>
+                <li><a href="">PARA EMPRESAS</a></li>
+                <li><a href="">ENTRAR</a> </li>
             </ul>
         </div>
         <div class="botaoPlanos">
-            <input type="button" value="Ver Planos">
+            <input type="button" value="VER PLANOS">
         </div>
     </header>
 
-    <main></main>
-    <nav></nav>
+    <main>  
+        <div class="main">  
+
+        <div class="container">
+            <div class="main-content">
+                <h1>Cursos <br>de <span style="color: #26cc00;">Tecnologia!</span></h1>
+                <p class="titulo1">Mergulhe em conteúdo com a maior comunidade de tecnologia do país.</p>
+                 <div class="botaoPlanos2">
+                <input type="button" value="VER OS PLANOS">
+                </div>
+            </div>
+        </div>
+
+        <div class="cursos">
+            <div class="cursosCards">
+                <div><a href="">1</a></div>
+                <div><a href="">2</a></div>
+                <div><a href="">3</a></div>
+                <div><a href="">4</a></div>
+                <div><a href="">5</a></div>
+                <div><a href="">6</a></div>
+                <div><a href="">7</a></div>
+                <div><a href="">8</a></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </main>
     <footer></footer>
     
 </body>
