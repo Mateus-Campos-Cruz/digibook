@@ -41,7 +41,6 @@
         }
 
         body {
-            
             display: grid;
             min-height: 100vh;
             grid-template-columns: 300px 1fr ;
@@ -222,15 +221,25 @@
         .destaqueCard {
             width: auto;
             margin: 0 10px 10px 0;
-            padding: 30px;
+            padding: 40px 30px;
             border: solid 1px #59a15e6b;
             background-color: #021017;
+            animation: jumpInfinite 2s infinite;
         }
+
+       /* @keyframes jumpInfinite {
+            transform: translateY(0);
+        }   */
 
         .destaqueCard a {
            text-decoration: none;
            font-weight: bolder;
            font-size: 0.9em;
+        }
+
+        .destaqueCard:hover {
+            border: solid 1px #77f37f;
+            cursor: pointer;
         }
 
         .destaqueCard .infoCard {
