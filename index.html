@@ -227,19 +227,22 @@
             animation: jumpInfinite 2s infinite;
         }
 
-       /* @keyframes jumpInfinite {
+       /*@keyframes jumpInfinite {
             transform: translateY(0);
-        }   */
+        }*/
 
         .destaqueCard a {
            text-decoration: none;
            font-weight: bolder;
            font-size: 0.9em;
+           transition: transform 10.0s ease;
         }
 
         .destaqueCard:hover {
             border: solid 1px #77f37f;
             cursor: pointer;
+            /*transform: translateY(-10px);*/
+            transform: scale(1.1);  
         }
 
         .destaqueCard .infoCard {
