@@ -167,6 +167,8 @@ li {
     flex-direction: column;
 }
 
+/*CONTAINER*/
+
 h1 {
     color: #d2f2d4;
     font-size: 4em;
@@ -290,6 +292,15 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
     color: #00c86f;
     animation: jumpInfinite 2s infinite;
 }
+
+/*CONTAINER*/
+
+/*CONTAINER2*/
+.container2 {
+    margin-top: 40px;
+    color: white;
+}
+/*CONTAINER2*/
 
 
 /*MAIN*/
