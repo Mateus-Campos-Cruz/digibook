@@ -314,18 +314,19 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 
 /*CONTAINER2*/
 .container3 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    margin-top: 60px;
     color: white;
 }
 
 .box-container3 {
     display: flex;
     flex-direction: column;
-    background-color: #26cc00;
+    width: 95%;
+    background-color: #269b0c;
+    order: -1;
 }
 
 .box1 {
@@ -336,6 +337,18 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 .invite {
     display: flex;
     flex-direction: column;
+    align-items:center
+
+}
+
+.invite h3 {
+    font-size: 4em;
+    line-height: 0.99em;
+}
+
+.invite p {
+    margin-top: 40px;
+    
 }
 /*CONTAINER2*/
 
@@ -349,16 +362,16 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
     header {
         grid-area: cabecalho;
         display: grid;
-        margin: 0 40px;
-        padding: 40px 0;
+        margin: 0 40px  0 40px;
+        padding: 20px 0 0 0;
         grid-template-columns: 180px 1fr;
-        grid-template-rows: 1fr auto;
+        grid-template-rows:  auto 100px;
         grid-template-areas: 
         'logo busca busca'
         'menu menu planos';
         background-color: #01080E;
         }
-        
+
     .logo {
         grid-area: logo;
         display: inline-block;
@@ -373,7 +386,8 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 
     .barraBusca {
         grid-area: busca;
-        border: solid 1px #7be382;
+        display: flex;
+        border: solid 0.2px #7be382;
         background-color:#01080E;
         padding: 10px;
     }
@@ -384,11 +398,57 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         border: none;
         background-color:#01080E;
         outline: none;
-        width: 500px;
+        width: 650px;
     }
     .barraBusca input::placeholder {
         color: #7be382;
     
     }
+
+    .menu {
+        grid-area: menu ;
+        
+    }
+
+    .botaoPlanos {
+        grid-area: planos;
+    }
+
+    main {
+        margin: 0 40px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        background-image: url(robot.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 50%;
+    }
+
+    .main-container h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .container2 p{
+        width: 400px;
+    }
+
+    .cursos {
+        display: flex;
+       flex-direction: column;
+       width: 100%;
+    }
+
+    .cursosCards {
+        width: 100%;
+       display: grid;
+       grid-template-columns: 33.3% 33.3% 33.3%;
+       grid-template-rows: auto auto auto auto;
+    }
+
+
 }
 /*MEDIA*/
