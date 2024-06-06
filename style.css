@@ -90,6 +90,7 @@ body {
 i {
     color: #d2f2d4;
     padding: 0 20px;
+    font-size: 1.3em;
 }
 
 li {
@@ -152,17 +153,25 @@ li {
 .main{
     display: flex;
     flex-direction: column;
+    
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
     background-image: url(robot.png);
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.container {
+
+.container1 {
     display: flex;
     flex-direction: column;
+    
 }
 
-.main-content {
+.container2 {
     display: flex;
     flex-direction: column;
 }
@@ -241,34 +250,42 @@ h1 {
 
 .destaqueCard .c1 {
     color: #2BDEFD;
+    padding: 0;
 }
 
 .destaqueCard .c2 {
     color: #9cd33b;
+    padding: 0;
 }
 
 .destaqueCard .c3 {
     color: #7b71ff;
+    padding: 0;
 }
 
 .destaqueCard .c4 {
     color: #dc6ebe;
+    padding: 0;
 }
 
 .destaqueCard .c5 {
     color: #f16165;
+    padding: 0;
 }
 
 .destaqueCard .c6 {
     color: #00c86f;
+    padding: 0;
 }
 
 .destaqueCard .c7 {
     color: #ffba05;
+    padding: 0;
 }
 
 .destaqueCard .c8 {
     color: #ff8c2a;
+    padding: 0;
 }
 
 .down{
@@ -296,9 +313,29 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 /*CONTAINER*/
 
 /*CONTAINER2*/
-.container2 {
+.container3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 40px;
     color: white;
+}
+
+.box-container3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #26cc00;
+}
+
+.box1 {
+    background-color:#156802 ;
+    margin: 10px 10px 30px 10px;
+}
+
+.invite {
+    display: flex;
+    flex-direction: column;
 }
 /*CONTAINER2*/
 
