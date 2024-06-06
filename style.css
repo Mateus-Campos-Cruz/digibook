@@ -65,7 +65,7 @@ body {
 
 .barraBusca input {
     color: white;
-    font-weight: bold;
+    font-weight: normal;
     border: none;
     background-color:#01080E;
     outline: none;
@@ -341,3 +341,54 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 
 
 /*MAIN*/
+
+
+/*MEDIA*/
+@media(max-width:1024px) {
+
+    header {
+        grid-area: cabecalho;
+        display: grid;
+        margin: 0 40px;
+        padding: 40px 0;
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        'logo busca busca'
+        'menu menu planos';
+        background-color: #01080E;
+        }
+        
+    .logo {
+        grid-area: logo;
+        display: inline-block;
+        width: 150px;
+        margin-right: 20px;
+    }
+    
+    .logo img {
+        display: block;
+        width: 100%;
+    }
+
+    .barraBusca {
+        grid-area: busca;
+        border: solid 1px #7be382;
+        background-color:#01080E;
+        padding: 10px;
+    }
+    
+    .barraBusca input {
+        color: white;
+        font-weight: normal;
+        border: none;
+        background-color:#01080E;
+        outline: none;
+        width: 500px;
+    }
+    .barraBusca input::placeholder {
+        color: #7be382;
+    
+    }
+}
+/*MEDIA*/
