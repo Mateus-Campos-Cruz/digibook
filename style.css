@@ -323,7 +323,6 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 }
 
 .box-container3 {
-    
     width: 100%;
     background-color: #144612;
     order: -1;
@@ -364,7 +363,7 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 
 .invite p {
     margin-top: 40px;
-    color: #7be382;
+    color: #b9f4bd;
 }
 
 .welcome {
@@ -392,10 +391,71 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
     margin-bottom: 8px;
  
 }
+
+.buttons-container3 button:hover{
+    background-color: #7be382;
+    padding: 5px;
+    color: #01080E;
+    cursor: pointer;
+    
+ 
+}
 /*CONTAINER3*/
 
 /*CONTAINER4*/
 
+.container4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    margin-top: 60px;
+    color: #d2f2d4;
+    height: 400px;
+}
+
+.box-container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.box-container4 h1 {
+    line-height: 0.99em;
+}
+
+.box-container4 p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #b9f4bd;
+}
+
+.box-container4 input {
+    background-color: #22b600;
+    color: white;
+    font-weight: bolder;
+    padding: 15px 50px;
+    border: solid 1px #22b600;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%);
+    cursor: pointer;
+    margin-left: 10px;
+    width: 80%;
+    
+}
+
+.box-container4 input:hover {
+    background-color: #b9f4bd;
+    color: #000;
+    
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*CONTAINER4*/
 
 /*MAIN*/
 
@@ -499,7 +559,24 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
        grid-template-rows: auto auto auto auto;
     }
 
- 
+    .invite h3 {
+        font-size: 2em;
+        line-height: 0.99em;
+    }
+
+    .box-container4 {
+        width: 95%;
+    }
+
+    .box-container4 h1 {
+        font-size: 2em;
+        line-height: 0.99em;
+    }
+
+    .video iframe{
+        width:330px; 
+        height: 180px;
+    }
 
 }
 /*MEDIA*/
