@@ -325,13 +325,17 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
     display: flex;
     flex-direction: column;
     width: 95%;
-    background-color: #269b0c;
+    background-color: #124635;
     order: -1;
+    height: auto;
+    /*clip path*/
+    
 }
 
 .box1 {
-    background-color:#156802 ;
-    margin: 10px 10px 30px 10px;
+    background-color:#003029 ;
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
 }
 
 .invite {
@@ -349,6 +353,30 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 .invite p {
     margin-top: 40px;
     
+}
+
+.welcome {
+    background-color: #1e865e;
+    border-radius: 0 15px 15px 0;
+    margin: 15px 25px 25px 0px;
+    padding: 8px;
+    font-size: 0.9em;
+}
+
+.buttons-container2 {
+    text-align: right;
+}
+
+
+.buttons-container2 button{
+    border: solid 2px #22b600;
+    background-color: #01080E;
+    border-radius: 10px;
+    font-size: 0.9em;
+    padding: 5px;
+    color: #7be382;
+    margin-bottom: 8px;
+ 
 }
 /*CONTAINER2*/
 
@@ -449,6 +477,7 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
        grid-template-rows: auto auto auto auto;
     }
 
+ 
 
 }
 /*MEDIA*/
