@@ -312,7 +312,7 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 
 /*CONTAINER*/
 
-/*CONTAINER2*/
+/*CONTAINER3*/
 .container3 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -382,7 +382,7 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 }
 
 
-.buttons-container2 button{
+.buttons-container3 button{
     border: solid 2px #22b600;
     background-color: #01080E;
     border-radius: 10px;
@@ -392,7 +392,9 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
     margin-bottom: 8px;
  
 }
-/*CONTAINER2*/
+/*CONTAINER3*/
+
+/*CONTAINER4*/
 
 
 /*MAIN*/
