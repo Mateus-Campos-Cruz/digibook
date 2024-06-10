@@ -410,7 +410,6 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
     gap: 30px;
     margin-top: 60px;
     color: #d2f2d4;
-    height: 400px;
 }
 
 .box-container4 {
@@ -499,7 +498,7 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
     }
 
     .container-info a:hover {
-        color: #b9f4bd;
+        color: #b3b3b3;
     }
 
     .column1, .column2, .column3, .column4, .column5 {
@@ -509,11 +508,14 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 
     .barraEmail {
         display: flex;
-        border: solid 1px #7be382;
+        border: solid 1px white;
         background-color:#01080E;
         padding: 10px;
         justify-content:space-between;
         margin-top: 20px;
+        background-color:transparent;
+        height: 12%;
+        align-items: center;
     }
     
     .barraEmail input {
@@ -539,9 +541,14 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         margin-top: 20px;
     } 
 
-    .redesSociais a {
-        padding: 0;
+    .redesSociais i {
+        padding: 5px;
+        font-size: 2em;
     } 
+
+    .redesSociais i:hover {
+        color: #b3b3b3;
+    }
 
    
 /*FOOTER*/
