@@ -675,7 +675,11 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         flex-direction: column;
     }
 
-    .container-redes .cnpj {
+    .container-redes .cnpj h1 {
+        text-align: center;
+    }
+
+    .container-redes .cnpj p {
         display: none;
     }
 
