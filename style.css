@@ -670,5 +670,42 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         height: 180px;
     }
 
+    .container-redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-redes .cnpj {
+        display: none;
+    }
+
+    .container-redes .redesSociais p {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .container-redes .icons-social {
+        text-align: center;
+    }
+
+    .container-info {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 40px;
+    }
+
+    .container-info div{
+        margin-top: 80px;
+    }
+
+    .container-info .barraEmail{
+        margin-top: 20px;
+    }
+
+    .container-info p{
+        font-weight: bold;
+    }
+
 }
 /*MEDIA*/
