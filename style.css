@@ -46,6 +46,10 @@ body {
 
 /*HEADER*/
 
+.icon-menu {
+    display: none;
+}
+
 .logo {
     display: inline-block;
     width: auto;
@@ -711,5 +715,39 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         font-weight: bold;
     }
 
+    @media(max-width:768px) {
+
+        header{
+            grid-area: cabecalho;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 20px;
+            padding: 40px 0;
+        }
+
+        .icon-menu {
+            display: inline;
+        }
+
+        
+
+        .barraBusca{
+            display: none;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .main-container {
+           
+            background-image: none;
+            
+        }
+
+    }
 }
 /*MEDIA*/
