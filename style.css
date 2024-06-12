@@ -54,12 +54,23 @@ body {
     display: inline-block;
     width: auto;
     margin-right: 20px;
+    color: white;
+    
 }
 
-.logo img {
-    display: block;
-    width: 100%;
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
 }
+
+.menumini i {
+    border: solid 1px green;
+    padding: 10px 15px;
+    background-color: rgb(4, 19, 4) ;
+    margin-right: 10px;
+}
+
 
 .barraBusca {
     border: solid 1px #7be382;
@@ -420,11 +431,12 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 65%;
 }
 
 .box-container4 h1 {
     line-height: 0.99em;
+    color: #d2f2d4;
 }
 
 .box-container4 p {
@@ -585,9 +597,8 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         margin-right: 20px;
     }
     
-    .logo img {
-        display: block;
-        width: 100%;
+    .logo a {
+        font-size: 2em;
     }
 
     .barraBusca {
@@ -785,11 +796,16 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         }
 
         .container4 {
-            grid-template-columns: 100%;
+            grid-template-columns: 50% 50%;
         }
 
         .box-container4 {
             order: 1;
+        }
+
+        .video{
+            display: flex;
+            align-items: center;
         }
 
         .video iframe {
@@ -828,8 +844,13 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
             margin: 0 15px;
         }
 
+
         .container3 .invite h3{
             font-size: 1.7em;
+        }
+
+        .container4 {
+            grid-template-columns: 100%;
         }
 
         .box-container4 {
@@ -841,6 +862,23 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         .box-container4 input {
             margin: 0;
 
+        }
+
+        footer {
+            padding: 40px 60px;
+        }
+
+        .container-redes .redesSociais p {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .icons-social a i {
+            font-size: 1.5em;
+        }
+
+        .container-info {
+            grid-template-columns: 100%;
         }
     }
 
