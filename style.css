@@ -913,7 +913,7 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
             margin: 0;
         }
 
-        .botaoPlanos input{
+        .botaoPlanos{
             
           display: none;
         }
