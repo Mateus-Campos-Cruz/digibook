@@ -842,7 +842,7 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         }
 
         .botaoPlanos input{
-            display: none;
+            display: none !important;
         }
 
         main {
