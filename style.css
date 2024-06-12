@@ -801,4 +801,32 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
 
     }
 
+    @media(max-width: 425px) {
+        header {
+            margin: 0px 15px;
+        }
+
+        .menumini {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        .menumini i {
+            border: solid 1px green;
+            padding: 10px 15px;
+            background-color: rgb(4, 19, 4) ;
+            margin-right: 10px;
+        }
+
+        .botaoPlanos input{
+            height: 4em;
+        }
+
+        main {
+            margin: 0 15px;
+        }
+    }
+
 /*MEDIA*/
