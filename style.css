@@ -827,6 +827,21 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         main {
             margin: 0 15px;
         }
+
+        .container3 .invite h3{
+            font-size: 1.7em;
+        }
+
+        .box-container4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-container4 input {
+            margin: 0;
+
+        }
     }
 
 /*MEDIA*/
