@@ -793,11 +793,10 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         }
 
         .video iframe {
-
-                width: 400px; 
-                height: 220px;
-                margin-bottom: 20px;
-            
+            width: 100%; /* A largura agora é 100% do elemento pai */
+            max-width: 400px; /* Define um valor máximo para a largura */
+            aspect-ratio: 16 / 9; /* Mantém a proporção de 16:9 */
+            margin-bottom: 20px;
         }
 
     }
