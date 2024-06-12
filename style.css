@@ -916,7 +916,7 @@ transform: translateY(-10px); /* Levanta 10px para cima no meio da animação */
         .botaoPlanos input{
             width: auto;
             height: 33px;
-          
+          display: none;
         }
 
         .down {
